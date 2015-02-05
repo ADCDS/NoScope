@@ -12,7 +12,7 @@ if(isset($_REQUEST['Email'])){
     $acc = new Account();
     $acc->loadByEmail($_REQUEST['Email']);
     if($mysql->insert('recover',array('uid' => $acc->getId(),'code' => $r=generateValidationCode(8)))){
-        // mail($this->getEmail(),'Recuperação de Senha na '.NAME,'Aqui está seu código: '.$r.', acesse http://localhost/GameSite/?page=recover&c='.$r);
+        mail($this->getEmail(),'Recuperação de Senha na '.NAME,'Aqui está seu código: '.$r.', acesse http://localhost/GameSite/?page=recover&c='.$r);
          die('0');
     }
 }
