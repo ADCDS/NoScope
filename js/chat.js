@@ -6,8 +6,8 @@ var to_friendname;
 var me = $.cookie('uid');
 var cont = [];
 //create a new WebSocket object.
-
-var wsUri = "ws://"+DOMAIN+":9000/GameSite/ajax/chat_server.php";
+//Altere a linha abaixo com a URL do seu chat
+var wsUri = "ws://"+DOMAIN+":9000/NoScope/ajax/chat_server.php";
 websocket = new WebSocket(wsUri);
 websocket.onopen = function (ev) { // connection is open
 }
