@@ -1,5 +1,5 @@
 <?php
-//include 'C:/xampp/htdocs/GameSite/libs/functions_essentials.php';
+
 include '../classes/mysql.php';
 date_default_timezone_set ('America/Sao_Paulo');
 error_reporting(~E_ALL);
