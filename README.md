@@ -1,5 +1,5 @@
 # NoScope
-Plataforma de distribuição de jogos através de moeda virtual, feito em PHP e MySQL, algumas funções em AJAX.
+Plataforma de distribuição de jogos através de moeda virtual, feito em PHP, MySQL e Bootstrap 3 para parte visual, há também algumas funções em AJAX.
 
 ## NoScope
 =======================
