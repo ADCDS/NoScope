@@ -1,9 +1,7 @@
 # NoScope
 Plataforma de distribuição de jogos através de moeda virtual, feito em PHP, MySQL e Bootstrap 3 para parte visual, há também algumas funções em AJAX.
+Esse ssistema foi feito como Trabalho de Conclusão de Curso para o curso Técnico em Informática do Insituto Federal do Sul de Minas Gerais Campus Inconfidentes.
 
-## NoScope
-=======================
-Sistema feito para o Trabalho de Conclusão de Curso para o curso Técnico em Informática do Insituto Federal do Sul de Minas Gerais Campus Inconfidentes.
 ### DEMO
 [http://github.adriel.eu/NoScope](http://github.adriel.eu/NoScope)
 #### CREDENCIAIS ADMINSTRADOR
