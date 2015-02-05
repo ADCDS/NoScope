@@ -6,6 +6,7 @@ Esse ssistema foi feito como Trabalho de Conclusão de Curso para o curso Técni
 [http://github.adriel.eu/NoScope](http://github.adriel.eu/NoScope)
 #### CREDENCIAIS ADMINSTRADOR
 User: admin
+
 Pass: admin
 
 ### Instalação:
