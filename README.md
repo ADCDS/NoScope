@@ -24,14 +24,15 @@ Pass: admin
 
 #### Instalando o chat
 
-1. Abra o arquivo ajax/chat_server.php e edite as seguintes linhas
+1- Abra o arquivo ajax/chat_server.php e edite as seguintes linhas
 
--> $host = '172.28.1.145'; //Com o IP do servidor que está como host
+> $host = '172.28.1.145'; //Com o IP do servidor que está como host
 
--> $port = '9000'; //Com a porta que você quer que o Chat funcione
+> $port = '9000'; //Com a porta que você quer que o Chat funcione
 
-3. No arquivo _js/chat.js_ Altere a linha var **wsUri = "ws://"+DOMAIN+":9000/NoScope/ajax/chat_server.php";** com o Domínio, Porta e Diretórios corretos para acessar o chat.
-4. Inicie o servidor de Chat com o comando > php -q ajax/chat_server.php
+2- No arquivo _js/chat.js_ Altere a linha var **wsUri = "ws://"+DOMAIN+":9000/NoScope/ajax/chat_server.php";** com o Domínio, Porta e Diretórios corretos para acessar o chat.
+
+3- Inicie o servidor de Chat com o comando > php -q ajax/chat_server.php
 
 ----------------------------------------------------------------------------------------
 - Desenvolvido por Adriel Cardoso dos Santos(Turox)
