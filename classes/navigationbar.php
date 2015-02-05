@@ -32,7 +32,7 @@ static public function getRightMenus(){
           <li class="dropdown">
             <a id="login_com" class="dropdown-toggle" href="#" data-toggle="dropdown">Login<strong class="caret"></strong></a>
             <div class="dropdown-menu" style="padding: 15px; padding-bottom: 0px;">
-             <div id="notificacao_com" style="-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 5px;background:rgba(227,5,5,0.2);display: none;"><img width="32" height="32" src="http://localhost/GameSite/images/loadinghuge.gif"></div>
+             <div id="notificacao_com" style="-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 5px;background:rgba(227,5,5,0.2);display: none;"><img width="32" height="32" src="'.URL.'images/loadinghuge.gif"></div>
              <form id="form-signin_com">
                     <input type="text" class="input-block-level" placeholder="Username" id="username_com" name="UserName" value="'.@$_COOKIE['remember_me'].'">
                     <input type="password" class="input-block-level" placeholder="Password" id="password_com" name="Password">
