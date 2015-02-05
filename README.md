@@ -35,6 +35,5 @@ Pass: admin
 3. Inicie o servidor de Chat com o comando > php -q ajax/chat_server.php
 
 
-Desenvolvido por Adriel Cardoso dos Santos(Turox)
-
-Professor orientador Ivan Paulino Pereira
+- Desenvolvido por Adriel Cardoso dos Santos(Turox)
+- Professor orientador Ivan Paulino Pereira
