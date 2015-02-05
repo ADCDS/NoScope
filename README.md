@@ -16,9 +16,10 @@ Pass: admin
 
 #### Instalando o sistema básico
 1. Faça o download dos arquivos desse repositório e coloque dentro da pasta **www** do seu servidor  HTTP preferido (apache, nginx ou outro);
-2. Altere os dados de conexão do MySQL no arquivo _/classes/mysql.php_
-3. Altere as configurações básicas no arquivo _/libs/constants.php_
-4. Divirta-se
+2. Importe o arquivo db.sql para o seu servidor MySQL
+3. Altere os dados de conexão do MySQL no arquivo _/classes/mysql.php_
+4. Altere as configurações básicas no arquivo _/libs/constants.php_
+5. Divirta-se
 
 #### Instalando o chat
 
