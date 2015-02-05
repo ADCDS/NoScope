@@ -1,0 +1,128 @@
+#wrap > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+#footer > .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+code {
+  font-size: 80%;
+}
+
+.badger {
+  position: absolute;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  background: rgb(153, 153, 153);
+  color: #fff;
+  cursor: pointer;
+}
+
+.badger.active {
+  background: rgb(66, 139, 202);
+}
+
+.badger.top-left {
+  top: 0px; left: 0px;
+  border-radius: 4px 0px 6px 0px;
+}
+
+.badger.top-center {
+  top: 0px; left: 50%;
+  margin-left: -43px;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.badger.top-right {
+  top: 0px; right: 0px;
+  border-radius: 0px 4px 0px 6px;
+}
+
+.badger.bottom-left {
+  bottom: 0px; left: 0px;
+  border-radius: 0px 6px 0px 4px;
+}
+
+.badger.bottom-center {
+  bottom: 0px; left: 50%;
+  margin-left: -53px;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.badger.bottom-right {
+  bottom: 0px; right: 0px;
+  border-radius: 6px 0px 4px 0px;
+}
+
+.has-switch { width: 100%; }
+.has-switch span, .has-switch label { padding: 6px 0px; z-index: 9; font-weight:bold; }
+
+.bootstrap-select.btn-group, .bootstrap-select.btn-group[class*="span"] { margin-bottom: 0px; }
+
+.header {
+  font-size: 5em;
+  letter-spacing: -2px;
+}
+
+#github {
+  position: fixed;
+  top: 0px; right: 20px;
+  display: block;
+  width: 85px; height: 166px;
+  background:transparent url(../img/forkme.png) no-repeat -266px -51px; 
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#github:hover {
+  background-position: -266px 0px;
+}
+
+.alert-growl {
+  border-radius: 10px;
+  background-color: rgb(25, 25, 25);
+  background-color: rgba(25, 25, 25, 0.9);
+  border-width: 2px;
+  border-color: rgb(255, 255, 255);
+  border-color: rgba(255, 255, 255, 0.9);
+  color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px rgb(25, 25, 25);
+  box-shadow: 0px 0px 10px rgba(25, 25, 25, 0.8);
+}
+.alert-growl button.close {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+.alert-growl img {
+  float: left;
+  padding: 0px 5px 0px 0px;
+}
+
+hr.separator {
+    clear: both;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left,rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.15),rgba(0, 0, 0, 0));
+    background-image: -moz-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -ms-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+    background-image: -o-linear-gradient(left,rgba(0,0,0,0),rgba(0,0,0,0.15),rgba(0,0,0,0));
+}
+
+.growl-animated {
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}

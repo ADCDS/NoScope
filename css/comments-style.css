@@ -1,0 +1,24 @@
+body{ background: #e9eaed; font: 12px 'Segoe UI', 'Proxima Nova', 'Helvetica Neue', Helvetica, Arial, sans-serif;   margin: 0;}
+
+.wcd{width:33%; height:40px; float:left;}
+.wcd-logo{font-size: 36px; color: #fff;text-align: center; float:left; cursor: pointer;  color:#fff; font-size: 32px; font-family: 'Varela Round', sans-serif;
+-webkit-transition:color 0.3s ease-in;  -moz-transition:color 0.3s ease-in; x²-o-transition:color 0.3s ease-in; transition:color 0.3s ease-in;
+   }
+   .wcd-logo:hover{color:#3facff;}
+.wcd-tuto{ font-family: 'Varela Round', sans-serif; color: #fff; font-size: 16px; line-height: 36px;}
+.webcodo-top{width:100%; height:40px; background-color:#232323}
+
+.clear{clear: both;}
+
+
+.grid{background: url(../img/grid.png) 50% no-repeat;}
+.grid:hover{background: #7eb800 url(../img/gridw.png) 50% no-repeat;}
+.grid-active{ background: #039fd3 url(../img/gridw.png) 50% no-repeat; }
+
+.list{background:  url(../img/list.png) 50% no-repeat;}
+.list:hover{background: #7eb800 url(../img/listw.png) 50% no-repeat;}
+.list-active{background: #039fd3 url(../img/listw.png) 50% no-repeat;}
+
+
+
+

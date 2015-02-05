@@ -1,0 +1,21 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: hal
+ * Date: 4/30/14
+ * Time: 8:27 AM
+ */
+
+if(!defined('INITIALIZED'))
+    exit;
+$layout_header = '
+<script src="'.URL.'/scripts/jquery-2.1.1.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<!-- Latest compiled and minified JavaScript -->
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+<script src="scripts/jquery.growl.js" type="text/javascript"></script>
+<link href="css/jquery.growl.css" rel="stylesheet" type="text/css" />'.$layout_header;
+include(LAYOUT_PATH."layout.php");
+?>
