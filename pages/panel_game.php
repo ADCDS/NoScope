@@ -39,12 +39,10 @@ if(!isLogged()){
                         }
 
                         if ($warning->getErrorsCount(Warnings::TYPE_ERROR) == 0) {
-                            if ($mysql->insert('games_stats', array('game_id' => $game->getId()))) {
-                                if ($game->Publicar(true)) {
-                                    $warning->addSuccess(null, 'Jogo publicado com sucesso');
-                                } else {
-                                    $warning->addError(null, 'Não foi possível completar a publicação tente mais tarde.');
-                                }
+                            if ($game->Publicar(true)) {
+                                $warning->addSuccess(null, 'Jogo publicado com sucesso');
+                            } else {
+                                $warning->addError(null, 'Não foi possível completar a publicação tente mais tarde.');
                             }
                         }
                     }
