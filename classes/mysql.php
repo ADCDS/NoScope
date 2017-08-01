@@ -12,9 +12,9 @@ class mysql {
     function __construct($db=array()) {
         $default = array(
             'host' => '127.0.0.1',
-            'user' => 'noscope_user',
-            'pass' => 'abc',
-            'db' => 'noscope'
+            'user' => 'root',
+            'pass' => 'captlc*45',
+            'db' => 'NoScope'
         );
         $db = array_merge($default,$db);
         $this->con=@mysql_connect($db['host'],$db['user'],$db['pass'],true) or die ('Error connecting to MySQL');
@@ -99,7 +99,7 @@ class mysql {
 			if(mysql_real_escape_string($value,$this->con)!=""){
 			$what_to_set []= "`$field`='".mysql_real_escape_string($value,$this->con)."'";
 			}else{
-			array_pop($what_to_set);
+			//array_pop($what_to_set);
 			}
 			}
         }
