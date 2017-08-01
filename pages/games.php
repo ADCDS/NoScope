@@ -31,7 +31,7 @@ $jogomaisbemavaliado = new Game(doublemax($result_d)['i']);
 
 
 //PEGANDO JOGO MAIS FAMOSO
-$mysql_result = $mysql->query("SELECT game_id,MAX(views) as views FROM games_stats WHERE 1")[0];
+$mysql_result = $mysql->query("SELECT game_id as views FROM games_stats WHERE views = (SELECT MAX(views) FROM games_stats);")[0];
 $jogomaisfamoso = new Game($mysql_result['games_stats']['game_id']);
 $jogomaisfamosoviews = $mysql_result['0']['views'];
 
