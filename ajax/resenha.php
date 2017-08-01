@@ -8,8 +8,9 @@
 include '../libs/ajax.include.php';
 if(!isLogged()) exit;
 if(isset($_REQUEST['resenha'])&&isset($_REQUEST['gid'])){
-$gid = mysql_escape_string($_REQUEST['gid']);
-$data = mysql_escape_string($_REQUEST['resenha']);
+$gid = mysql_real_escape_string($_REQUEST['gid'], $mysql->con);
+$data = mysql_real_escape_string($_REQUEST['resenha'], $mysql->con);
+
 if($data=="") exit;
 $mysql->insert('reviews', array(
 'gid' => $gid,
@@ -23,6 +24,7 @@ $mysql->insert('reviews', array(
     }
 }
 $resenhas = null;
+
 foreach($mysql->query('SELECT * FROM reviews WHERE gid='.$gid.' ORDER BY date DESC') as $resenha){
     $resenha = $resenha['reviews'];
     $resenhas .= '<li>
