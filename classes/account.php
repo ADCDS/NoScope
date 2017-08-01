@@ -40,13 +40,8 @@ class Account{
        global $mysql;
         if($this->createAcc){//Criando nova Conta
           $this->data = array_filter($this->data);
-        if($AccountId = $mysql->insert('accounts', $this->data)){
-            if(($mysql->insert('validations', array(
-                'code' => $rand = generateValidationCode(),
-                'accounts_id' => $AccountId
-            )))&&($mysql->insert('accounts_options', array('accounts_id'=>$AccountId))))//Cria um registro na tabela de validações e opções mail($this->getEmail(),'Sua conta na '.NAME,'Aqui está seu código: '.$rand.' Bem vindo a '.NAME,"From: admin@gamesite.com\n")
+        if($mysql->insert('accounts', $this->data)){
            return true;
-            return false;
         }else{
             return false;
         }
