@@ -10,7 +10,7 @@ http://www.99points.info/2010/05/ajax-rating-system-create-simple-ajax-rating-sy
 $gid = $_REQUEST['gid'];
 include '../classes/mysql.php';
 $mysql = new mysql();
-$show = $_GET['show'];
+$show = (isset($_GET['show'])?$_GET['show']:0);
 if($show!=1){
 ?>
 <script type="text/javascript" src="../js/jquery-2.1.1.min.js"></script>
