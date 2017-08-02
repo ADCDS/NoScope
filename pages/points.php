@@ -37,8 +37,7 @@ if(!isLogged()){
                 if(is_numeric($_POST['points'])){
                         if (filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
                             if(is_numeric($_POST['metodo'])){
-                                if($GLOBALS['acc']->removePoints($_POST['points'])){
-                            $mysql->insert('points_transfer', array('accounts_id'=>$GLOBALS['acc']->getId(),'points'=>$_POST['points'],'email'=>$_POST['email'],'payment_type'=>$_POST['metodo'],'value'=>$_POST['points']*1-($_POST['points']/100*10)));
+                                if($mysql->insert('points_transfer', array('accounts_id'=>$GLOBALS['acc']->getId(),'points'=>$_POST['points'],'email'=>$_POST['email'],'payment_type'=>$_POST['metodo'],'value'=>$_POST['points']*1-($_POST['points']/100*10)))){
                             $warning->addSuccess(null, 'Tudo certo, você receberá o dinheiro assim que um administrador aprovar');
                             }else{
                                     $warning->addError(null, 'Você não tem Copes suficientes');
