@@ -169,7 +169,8 @@ class Account
     {
         global $mysql;
         if (!$this->isValidated()) {
-            if ($mysql->get('validations', 'code', 'accounts_id =' . $this->getId()) == $code && ($this->data['validado'] = 1) && ($mysql->update('validations', array('date_validated' => CURRENT_TIME), 'accounts_id =' . $this->getId())) && $this->save())
+            $validation  = $mysql->query('SELECT validaConta('.$this->getId().', "'.$code.'") AS v');
+            if ($validation[0][0]['v'] == 3)
                 return true;
             else
                 return false;

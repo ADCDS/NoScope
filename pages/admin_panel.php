@@ -74,6 +74,14 @@ $acc2 = new Account($_GET['unban_user']);
     }else{
         $warning->addError(null, 'Ocorreu um erro ao adicionar os Copes');
     }
+}elseif((isset($_GET['validate']))&&(isset($_GET['acc']))){
+    $acc2 = new Account($_GET['acc']);
+    $code = $mysql->query('SELECT code FROM validations WHERE accounts_id = '.$acc2->getId())[0]['validations']['code'];
+    if($acc2->validarConta($code)){
+        $warning->addSuccess(null, 'Conta de ID: <b>'.$_GET['acc'].'</b> foi validado');
+    }else{
+        $warning->addError(null, 'Ocorreu um erro ao tentar validar');
+    }
 }
 
 if(isset($_GET['edit_user'])){
@@ -421,7 +429,7 @@ $(\'#myTable4\').pageMe({pagerSelector:\'#myPager4\',showPrevNext:true,hidePageN
 							<span class="glyphicon glyphicon-euro"></span>'.$account['accounts']['points'].'<a href="#" onclick="var copes = prompt(\'Quantos Copes deseja dar para esse usuário?\', \'\'); if(copes!=null){document.location.href=\''.urlToPage('admin_panel').'&acc='.$account['accounts']['id'].'&addcopes=\'+copes+\'\'}"><span class="glyphicon glyphicon-plus-sign"></span></a>
 						</td>
 						<td>
-							'.($account['accounts']['banned']==1?'Banido<p>':'').($account['accounts']['validado']==1?'Validado':'Não Validado').'
+							'.($account['accounts']['banned']==1?'Banido<p>':'').($account['accounts']['validado']==1?'Validado':'Não Validado <a href="'.urlToPage('admin_panel').'&validate&acc='.$account['accounts']['id'].'"><span class="glyphicon glyphicon-ok-circle"></span></a>').'
 						</td>
 						<td>
 						<a href="'.urlToPage('admin_panel').'&edit_user='.$account['accounts']['id'].'"><span class="glyphicon glyphicon-edit"></span></a>
